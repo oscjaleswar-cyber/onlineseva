@@ -63,6 +63,21 @@
             "Mock Test"
           ]
         },
+         {
+          "id": "Nirman Shramik",
+          "name": "Nirman Shramik",
+          "icon": "📝",
+          "description": "Online practice and mock tests for competitive examinations.",
+          "badge": "new",
+          "accent": "#0d6efd",
+          "officialUrl": "#",
+          "image": "../nirman-shramik.png",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Mock Test.",
+          "tags": [
+            "Mock Test"
+          ]
+        },
         {
           "id": "id-card-print",
           "name": "ID Card Print",
