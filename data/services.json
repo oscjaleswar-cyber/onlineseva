@@ -71,7 +71,7 @@
           "badge": "new",
           "accent": "#0d6efd",
           "officialUrl": "#",
-          "image": "../nirman-shramik.png",
+          "image": "../images/nirman-shramik.png",
           "enabled": true,
           "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Mock Test.",
           "tags": [
