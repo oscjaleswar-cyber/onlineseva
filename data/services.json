@@ -79,6 +79,21 @@
           ]
         },
         {
+          "id": "Ration Card",
+          "name": "Ration Card",
+          "icon": "📝",
+          "description": "New Apply,Name Add , Delete",
+          "badge": "new",
+          "accent": "#0d6efd",
+          "officialUrl": "https://www.foododisha.in/citizenservice.asp?GL=eservice&lnk=29",
+          "image": "../images/Ration-Card.png",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Mock Test.",
+          "tags": [
+            "Mock Test"
+          ]
+        },
+        {
           "id": "id-card-print",
           "name": "ID Card Print",
           "icon": "🪪",
