@@ -1,0 +1,1271 @@
+{
+  "config": {
+    "brand": {
+      "name": "Rajeeb Online Workshop",
+      "shortName": "ROW",
+      "tagline": "Digital Services • Online Applications • Design & Print",
+      "description": "Your one-stop online communication and digital service centre.",
+      "logoText": "ROW"
+    },
+    "contact": {
+      "whatsappNumber": "919999999999",
+      "phone": "+91 99999 99999",
+      "email": "hello@rajeebonlineworkshop.com",
+      "address": "Your Location, Odisha, India"
+    },
+    "hero": {
+      "title": "Your Digital Services, Simplified",
+      "subtitle": "Apply for government services, create documents, edit photos, print cards and get online assistance from one professional service portal.",
+      "searchPlaceholder": "Search services, applications, forms, PDF tools..."
+    },
+    "theme": {
+      "default": "light",
+      "allowSystem": true
+    },
+    "footer": {
+      "note": "Rajeeb Online Workshop is a private digital service centre. Government/official portals open in a new tab."
+    }
+  },
+  "categories": [
+    {
+      "id": "essential",
+      "title": "Essential & Online Services",
+      "subtitle": "Fast assistance for everyday online applications",
+      "accent": "blue",
+      "services": [
+        {
+          "id": "latest-jobs",
+          "name": "Latest Jobs",
+          "icon": "💼",
+          "description": "Find and view latest job notifications and application links.",
+          "badge": "new",
+          "accent": "#0d6efd",
+          "officialUrl": "https://www.ncs.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Latest Jobs.",
+          "tags": [
+            "Latest Jobs"
+          ]
+        },
+        {
+          "id": "mock-test",
+          "name": "Mock Test",
+          "icon": "📝",
+          "description": "Online practice and mock tests for competitive examinations.",
+          "badge": "new",
+          "accent": "#0d6efd",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Mock Test.",
+          "tags": [
+            "Mock Test"
+          ]
+        },
+        {
+          "id": "id-card-print",
+          "name": "ID Card Print",
+          "icon": "🪪",
+          "description": "Professional ID card design and printing assistance.",
+          "badge": "new",
+          "accent": "#0d6efd",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: ID Card Print.",
+          "tags": [
+            "ID Card Print"
+          ]
+        },
+        {
+          "id": "pan-card",
+          "name": "PAN Card Apply",
+          "icon": "🪪",
+          "description": "PAN application and related assistance.",
+          "badge": "hot",
+          "accent": "#0d6efd",
+          "officialUrl": "https://www.pan.utiitsl.com/PAN/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PAN Card Apply.",
+          "tags": [
+            "PAN Card Apply"
+          ]
+        },
+        {
+          "id": "aadhaar",
+          "name": "Aadhaar Services",
+          "icon": "🆔",
+          "description": "Aadhaar-related online services and guidance.",
+          "badge": "new",
+          "accent": "#0d6efd",
+          "officialUrl": "https://uidai.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Aadhaar Services.",
+          "tags": [
+            "Aadhaar Services"
+          ]
+        },
+        {
+          "id": "voter",
+          "name": "Voter ID Services",
+          "icon": "🗳️",
+          "description": "Voter registration, correction and citizen services.",
+          "badge": "new",
+          "accent": "#0d6efd",
+          "officialUrl": "https://voters.eci.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Voter ID Services.",
+          "tags": [
+            "Voter ID Services"
+          ]
+        },
+        {
+          "id": "passport-photo",
+          "name": "Passport Photo",
+          "icon": "📸",
+          "description": "Passport-size photo preparation and printing.",
+          "badge": "",
+          "accent": "#0d6efd",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Passport Photo.",
+          "tags": [
+            "Passport Photo"
+          ]
+        },
+        {
+          "id": "photo-edit",
+          "name": "Photo Crop & Resize",
+          "icon": "✂️",
+          "description": "Crop, resize, compress and prepare photos for forms.",
+          "badge": "",
+          "accent": "#0d6efd",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Photo Crop & Resize.",
+          "tags": [
+            "Photo Crop & Resize"
+          ]
+        },
+        {
+          "id": "resume",
+          "name": "Resume / CV",
+          "icon": "📄",
+          "description": "Professional resume and CV preparation.",
+          "badge": "new",
+          "accent": "#0d6efd",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Resume / CV.",
+          "tags": [
+            "Resume / CV"
+          ]
+        },
+        {
+          "id": "new-service",
+          "name": "New Service Post",
+          "icon": "🧩",
+          "description": "Add a new service card from services.json.",
+          "badge": "new",
+          "accent": "#0d6efd",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: New Service Post.",
+          "tags": [
+            "New Service Post"
+          ]
+        },
+        {
+          "id": "document-album",
+          "name": "Document Album",
+          "icon": "🗂️",
+          "description": "Organize and prepare scanned documents for applications.",
+          "badge": "new",
+          "accent": "#0d6efd",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Document Album.",
+          "tags": [
+            "Document Album"
+          ]
+        },
+        {
+          "id": "nsdl-panam-id",
+          "name": "NSDL PAAM ID",
+          "icon": "🪪",
+          "description": "PAN-related application and service assistance.",
+          "badge": "hot",
+          "accent": "#0d6efd",
+          "officialUrl": "https://www.protean-tinpan.com/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: NSDL PAAM ID.",
+          "tags": [
+            "NSDL PAAM ID"
+          ]
+        },
+        {
+          "id": "payment-qr",
+          "name": "Payment / Locked QR",
+          "icon": "🔐",
+          "description": "Payment and QR-related assistance.",
+          "badge": "hot",
+          "accent": "#0d6efd",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Payment / Locked QR.",
+          "tags": [
+            "Payment / Locked QR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creative",
+      "title": "Creative Design Studio",
+      "subtitle": "Professional design, photo and document creation",
+      "accent": "pink",
+      "services": [
+        {
+          "id": "pro-resume",
+          "name": "Pro Resume Maker",
+          "icon": "📄",
+          "description": "Professional resume design and formatting.",
+          "badge": "new",
+          "accent": "#d63384",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Pro Resume Maker.",
+          "tags": [
+            "Pro Resume Maker"
+          ]
+        },
+        {
+          "id": "marriage-biodata",
+          "name": "Marriage Biodata",
+          "icon": "💌",
+          "description": "Modern marriage biodata design and print.",
+          "badge": "new",
+          "accent": "#d63384",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Marriage Biodata.",
+          "tags": [
+            "Marriage Biodata"
+          ]
+        },
+        {
+          "id": "pro-id",
+          "name": "Pro ID Maker",
+          "icon": "🪪",
+          "description": "ID card design and print-ready preparation.",
+          "badge": "new",
+          "accent": "#d63384",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Pro ID Maker.",
+          "tags": [
+            "Pro ID Maker"
+          ]
+        },
+        {
+          "id": "pro-poster",
+          "name": "Pro Poster Maker",
+          "icon": "🎨",
+          "description": "Posters, notices, offers and promotional designs.",
+          "badge": "new",
+          "accent": "#d63384",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Pro Poster Maker.",
+          "tags": [
+            "Pro Poster Maker"
+          ]
+        },
+        {
+          "id": "application-maker",
+          "name": "Application Maker",
+          "icon": "📝",
+          "description": "Application letters and official-format documents.",
+          "badge": "new",
+          "accent": "#d63384",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Application Maker.",
+          "tags": [
+            "Application Maker"
+          ]
+        },
+        {
+          "id": "shop-promotion",
+          "name": "Shop Promotion Maker",
+          "icon": "📣",
+          "description": "Digital posters, banners and shop promotions.",
+          "badge": "new",
+          "accent": "#d63384",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Shop Promotion Maker.",
+          "tags": [
+            "Shop Promotion Maker"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pdf",
+      "title": "Smart PDF & Image Tools",
+      "subtitle": "Quick document conversion and PDF utilities",
+      "accent": "orange",
+      "services": [
+        {
+          "id": "jpg-pdf",
+          "name": "JPG To PDF",
+          "icon": "🖼️",
+          "description": "Convert images into PDF documents.",
+          "badge": "",
+          "accent": "#fd7e14",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: JPG To PDF.",
+          "tags": [
+            "JPG To PDF"
+          ]
+        },
+        {
+          "id": "pdf-jpg",
+          "name": "PDF To JPG",
+          "icon": "📑",
+          "description": "Convert PDF pages into JPG images.",
+          "badge": "",
+          "accent": "#fd7e14",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PDF To JPG.",
+          "tags": [
+            "PDF To JPG"
+          ]
+        },
+        {
+          "id": "png-pdf",
+          "name": "PNG To PDF",
+          "icon": "🖼️",
+          "description": "Convert PNG images into PDF.",
+          "badge": "",
+          "accent": "#fd7e14",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PNG To PDF.",
+          "tags": [
+            "PNG To PDF"
+          ]
+        },
+        {
+          "id": "png-jpg",
+          "name": "PNG To JPG",
+          "icon": "🖼️",
+          "description": "Convert PNG images into JPG.",
+          "badge": "",
+          "accent": "#fd7e14",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PNG To JPG.",
+          "tags": [
+            "PNG To JPG"
+          ]
+        },
+        {
+          "id": "delete-pdf",
+          "name": "Delete PDF Page",
+          "icon": "🗑️",
+          "description": "Remove unwanted pages from a PDF.",
+          "badge": "",
+          "accent": "#fd7e14",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Delete PDF Page.",
+          "tags": [
+            "Delete PDF Page"
+          ]
+        },
+        {
+          "id": "merge-pdf",
+          "name": "Merge PDF",
+          "icon": "🔗",
+          "description": "Combine multiple PDF files into one document.",
+          "badge": "",
+          "accent": "#fd7e14",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Merge PDF.",
+          "tags": [
+            "Merge PDF"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cards",
+      "title": "Card Printing Services",
+      "subtitle": "Professional card creation and print assistance",
+      "accent": "green",
+      "services": [
+        {
+          "id": "unique-id",
+          "name": "Unique ID Card Print",
+          "icon": "🪪",
+          "description": "Design and print customized ID cards.",
+          "badge": "hot",
+          "accent": "#20c997",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Unique ID Card Print.",
+          "tags": [
+            "Unique ID Card Print"
+          ]
+        },
+        {
+          "id": "election-card",
+          "name": "Election Card Print",
+          "icon": "🗳️",
+          "description": "Election/voter card print assistance.",
+          "badge": "",
+          "accent": "#20c997",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Election Card Print.",
+          "tags": [
+            "Election Card Print"
+          ]
+        },
+        {
+          "id": "health-card",
+          "name": "Health Plan Card Print",
+          "icon": "🏥",
+          "description": "Health card print and document preparation.",
+          "badge": "new",
+          "accent": "#20c997",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Health Plan Card Print.",
+          "tags": [
+            "Health Plan Card Print"
+          ]
+        },
+        {
+          "id": "tax-id",
+          "name": "Tax Id Card Print",
+          "icon": "🧾",
+          "description": "Tax/ID card print assistance.",
+          "badge": "",
+          "accent": "#20c997",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Tax Id Card Print.",
+          "tags": [
+            "Tax Id Card Print"
+          ]
+        },
+        {
+          "id": "driving-permit",
+          "name": "Driving Permit Print",
+          "icon": "🚗",
+          "description": "Driving permit document print assistance.",
+          "badge": "",
+          "accent": "#20c997",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Driving Permit Print.",
+          "tags": [
+            "Driving Permit Print"
+          ]
+        },
+        {
+          "id": "school-id",
+          "name": "School/College ID",
+          "icon": "🎓",
+          "description": "School and college ID card design and print.",
+          "badge": "",
+          "accent": "#20c997",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: School/College ID.",
+          "tags": [
+            "School/College ID"
+          ]
+        },
+        {
+          "id": "food-card",
+          "name": "Food Subsidy Card Print",
+          "icon": "🛒",
+          "description": "Food/ration card print assistance.",
+          "badge": "new",
+          "accent": "#20c997",
+          "officialUrl": "#",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Food Subsidy Card Print.",
+          "tags": [
+            "Food Subsidy Card Print"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "portal",
+      "title": "Government & Portal Services",
+      "subtitle": "Quick access to official portals with local assistance",
+      "accent": "purple",
+      "services": [
+        {
+          "id": "census",
+          "name": "Census Of India",
+          "icon": "🏛️",
+          "description": "Census-related information and official portal access.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://censusindia.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Census Of India.",
+          "tags": [
+            "Census Of India"
+          ]
+        },
+        {
+          "id": "aadhaar-beta",
+          "name": "Aadhaar Beta Service",
+          "icon": "🆔",
+          "description": "Aadhaar citizen services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://uidai.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Aadhaar Beta Service.",
+          "tags": [
+            "Aadhaar Beta Service"
+          ]
+        },
+        {
+          "id": "uidai",
+          "name": "Aadhaar Information (UIDAI Link)",
+          "icon": "🔐",
+          "description": "Official UIDAI information and services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://uidai.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Aadhaar Information (UIDAI Link).",
+          "tags": [
+            "Aadhaar Information (UIDAI Link)"
+          ]
+        },
+        {
+          "id": "pan",
+          "name": "PAN Card Service",
+          "icon": "🪪",
+          "description": "PAN application and related services.",
+          "badge": "hot",
+          "accent": "#6f42c1",
+          "officialUrl": "https://www.pan.utiitsl.com/PAN/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PAN Card Service.",
+          "tags": [
+            "PAN Card Service"
+          ]
+        },
+        {
+          "id": "voter-correction",
+          "name": "Voter ID Correction & Status",
+          "icon": "🗳️",
+          "description": "Voter correction, registration and status.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://voters.eci.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Voter ID Correction & Status.",
+          "tags": [
+            "Voter ID Correction & Status"
+          ]
+        },
+        {
+          "id": "ayushman",
+          "name": "Ayushman Bharat (PM-JAY)",
+          "icon": "🏥",
+          "description": "PM-JAY information and beneficiary services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://pmjay.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Ayushman Bharat (PM-JAY).",
+          "tags": [
+            "Ayushman Bharat (PM-JAY)"
+          ]
+        },
+        {
+          "id": "driving-licence",
+          "name": "Driving Licence Service",
+          "icon": "🚘",
+          "description": "Driving licence services through Parivahan.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://parivahan.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Driving Licence Service.",
+          "tags": [
+            "Driving Licence Service"
+          ]
+        },
+        {
+          "id": "rc-service",
+          "name": "RC Service (Registration)",
+          "icon": "🚙",
+          "description": "Vehicle registration and RC services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://parivahan.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: RC Service (Registration).",
+          "tags": [
+            "RC Service (Registration)"
+          ]
+        },
+        {
+          "id": "vehicle",
+          "name": "Vehicle Service",
+          "icon": "🚗",
+          "description": "Vehicle-related online services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://parivahan.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Vehicle Service.",
+          "tags": [
+            "Vehicle Service"
+          ]
+        },
+        {
+          "id": "birth-death",
+          "name": "Birth & Death Certificate",
+          "icon": "📜",
+          "description": "Birth and death certificate service information.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://crsorgi.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Birth & Death Certificate.",
+          "tags": [
+            "Birth & Death Certificate"
+          ]
+        },
+        {
+          "id": "e-challan",
+          "name": "E-Challan",
+          "icon": "💳",
+          "description": "Traffic challan services and status.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://echallan.parivahan.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: E-Challan.",
+          "tags": [
+            "E-Challan"
+          ]
+        },
+        {
+          "id": "e-shram",
+          "name": "E-Shram Card",
+          "icon": "👷",
+          "description": "Official e-Shram registration and services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://eshram.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: E-Shram Card.",
+          "tags": [
+            "E-Shram Card"
+          ]
+        },
+        {
+          "id": "apaar",
+          "name": "APAAR ID Card",
+          "icon": "🎓",
+          "description": "APAAR academic identity information.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://apaar.education.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: APAAR ID Card.",
+          "tags": [
+            "APAAR ID Card"
+          ]
+        },
+        {
+          "id": "abha",
+          "name": "ABHA Card",
+          "icon": "🩺",
+          "description": "ABHA digital health account services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://abha.abdm.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: ABHA Card.",
+          "tags": [
+            "ABHA Card"
+          ]
+        },
+        {
+          "id": "pmfby",
+          "name": "Pradhan Mantri Fasal Bima Yojana",
+          "icon": "🌾",
+          "description": "PMFBY crop insurance information.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://pmfby.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Pradhan Mantri Fasal Bima Yojana.",
+          "tags": [
+            "Pradhan Mantri Fasal Bima Yojana"
+          ]
+        },
+        {
+          "id": "pmay-g",
+          "name": "PMAY-Gramin",
+          "icon": "🏠",
+          "description": "Pradhan Mantri Awaas Yojana - Gramin.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://pmayg.nic.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PMAY-Gramin.",
+          "tags": [
+            "PMAY-Gramin"
+          ]
+        },
+        {
+          "id": "pmay-u",
+          "name": "PMAY-Urban / Seheri",
+          "icon": "🏘️",
+          "description": "Pradhan Mantri Awas Yojana - Urban.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://pmay-urban.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PMAY-Urban / Seheri.",
+          "tags": [
+            "PMAY-Urban / Seheri"
+          ]
+        },
+        {
+          "id": "epfo",
+          "name": "EPFO (Employee Provident Fund)",
+          "icon": "💼",
+          "description": "EPFO member and employer services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://www.epfindia.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: EPFO (Employee Provident Fund).",
+          "tags": [
+            "EPFO (Employee Provident Fund)"
+          ]
+        },
+        {
+          "id": "lic",
+          "name": "LIC Service",
+          "icon": "🛡️",
+          "description": "LIC online service and policy information.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://licindia.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: LIC Service.",
+          "tags": [
+            "LIC Service"
+          ]
+        },
+        {
+          "id": "enam",
+          "name": "e-NAM",
+          "icon": "🌱",
+          "description": "National Agriculture Market services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://www.enam.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: e-NAM.",
+          "tags": [
+            "e-NAM"
+          ]
+        },
+        {
+          "id": "svanidhi",
+          "name": "PM SVANidhi Yojana",
+          "icon": "🏪",
+          "description": "PM SVANidhi scheme information.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://pmsvanidhi.mohua.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PM SVANidhi Yojana.",
+          "tags": [
+            "PM SVANidhi Yojana"
+          ]
+        },
+        {
+          "id": "soil-health",
+          "name": "Soil Health Card",
+          "icon": "🌱",
+          "description": "Soil health card information and services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://soilhealth.dac.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Soil Health Card.",
+          "tags": [
+            "Soil Health Card"
+          ]
+        },
+        {
+          "id": "mkisan",
+          "name": "MKisan Portal",
+          "icon": "🌾",
+          "description": "Farmer information and services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://mkisan.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: MKisan Portal.",
+          "tags": [
+            "MKisan Portal"
+          ]
+        },
+        {
+          "id": "surya-ghar",
+          "name": "PM Surya Ghar Yojana",
+          "icon": "☀️",
+          "description": "Rooftop solar scheme information.",
+          "badge": "new",
+          "accent": "#6f42c1",
+          "officialUrl": "https://pmsuryaghar.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PM Surya Ghar Yojana.",
+          "tags": [
+            "PM Surya Ghar Yojana"
+          ]
+        },
+        {
+          "id": "udyam",
+          "name": "Udyam Aadhaar / MSME",
+          "icon": "🏭",
+          "description": "MSME/Udyam registration information.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://udyamregistration.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Udyam Aadhaar / MSME.",
+          "tags": [
+            "Udyam Aadhaar / MSME"
+          ]
+        },
+        {
+          "id": "nsp",
+          "name": "National Scholarship Portal",
+          "icon": "🎓",
+          "description": "Scholarship application and status portal.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://scholarships.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: National Scholarship Portal.",
+          "tags": [
+            "National Scholarship Portal"
+          ]
+        },
+        {
+          "id": "lost-found",
+          "name": "Lost/Found Mobile & Internet",
+          "icon": "📱",
+          "description": "Guidance for lost device and telecom-related services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://www.ceir.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Lost/Found Mobile & Internet.",
+          "tags": [
+            "Lost/Found Mobile & Internet"
+          ]
+        },
+        {
+          "id": "railway",
+          "name": "Railway Service",
+          "icon": "🚆",
+          "description": "Official railway services and passenger information.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://www.irctc.co.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Railway Service.",
+          "tags": [
+            "Railway Service"
+          ]
+        },
+        {
+          "id": "passport-seva",
+          "name": "Passport Seva Service",
+          "icon": "🛂",
+          "description": "Passport application and appointment services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://www.passportindia.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Passport Seva Service.",
+          "tags": [
+            "Passport Seva Service"
+          ]
+        },
+        {
+          "id": "pm-kisan",
+          "name": "PM Kisan",
+          "icon": "🌾",
+          "description": "PM-KISAN registration, status and eKYC information.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://pmkisan.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PM Kisan.",
+          "tags": [
+            "PM Kisan"
+          ]
+        },
+        {
+          "id": "gst",
+          "name": "GST Verification",
+          "icon": "🧾",
+          "description": "GST registration and taxpayer services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://www.gst.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: GST Verification.",
+          "tags": [
+            "GST Verification"
+          ]
+        },
+        {
+          "id": "tax",
+          "name": "Checkpost Tax / Road Tax",
+          "icon": "🛣️",
+          "description": "Road tax and transport-related services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://parivahan.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Checkpost Tax / Road Tax.",
+          "tags": [
+            "Checkpost Tax / Road Tax"
+          ]
+        },
+        {
+          "id": "vahan",
+          "name": "Vahan Green Sewa",
+          "icon": "🚘",
+          "description": "Vehicle and transport services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://parivahan.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Vahan Green Sewa.",
+          "tags": [
+            "Vahan Green Sewa"
+          ]
+        },
+        {
+          "id": "puc",
+          "name": "PUC Service",
+          "icon": "🌫️",
+          "description": "Pollution certificate service information.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://puc.parivahan.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PUC Service.",
+          "tags": [
+            "PUC Service"
+          ]
+        },
+        {
+          "id": "npc",
+          "name": "National Payments Corporation of India",
+          "icon": "💳",
+          "description": "NPCI official information and services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://www.npci.org.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: National Payments Corporation of India.",
+          "tags": [
+            "National Payments Corporation of India"
+          ]
+        },
+        {
+          "id": "nch",
+          "name": "National Consumer Helpline",
+          "icon": "⚖️",
+          "description": "Consumer complaint and helpline portal.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://consumerhelpline.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: National Consumer Helpline.",
+          "tags": [
+            "National Consumer Helpline"
+          ]
+        },
+        {
+          "id": "ncs",
+          "name": "National Career Service",
+          "icon": "💼",
+          "description": "Government employment and career services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://www.ncs.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: National Career Service.",
+          "tags": [
+            "National Career Service"
+          ]
+        },
+        {
+          "id": "cibil",
+          "name": "Check Free CIBIL Score",
+          "icon": "📊",
+          "description": "Credit information and score services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://www.cibil.com/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Check Free CIBIL Score.",
+          "tags": [
+            "Check Free CIBIL Score"
+          ]
+        },
+        {
+          "id": "indane",
+          "name": "INDANE GAS",
+          "icon": "🔥",
+          "description": "Indane LPG official services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://iocl.com/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: INDANE GAS.",
+          "tags": [
+            "INDANE GAS"
+          ]
+        },
+        {
+          "id": "hp-gas",
+          "name": "HP GAS",
+          "icon": "🔥",
+          "description": "HP Gas official services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://myhpgas.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: HP GAS.",
+          "tags": [
+            "HP GAS"
+          ]
+        },
+        {
+          "id": "bharat-gas",
+          "name": "BHARAT GAS",
+          "icon": "🔥",
+          "description": "Bharatgas official services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://www.ebharatgas.com/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: BHARAT GAS.",
+          "tags": [
+            "BHARAT GAS"
+          ]
+        },
+        {
+          "id": "disability-id",
+          "name": "Unique Disability ID Card",
+          "icon": "♿",
+          "description": "UDID card and disability certificate services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://www.swavlambancard.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Unique Disability ID Card.",
+          "tags": [
+            "Unique Disability ID Card"
+          ]
+        },
+        {
+          "id": "digilocker",
+          "name": "DigiLocker",
+          "icon": "📂",
+          "description": "Access and manage digital government documents.",
+          "badge": "new",
+          "accent": "#6f42c1",
+          "officialUrl": "https://www.digilocker.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: DigiLocker.",
+          "tags": [
+            "DigiLocker"
+          ]
+        },
+        {
+          "id": "scholarship",
+          "name": "Scholarship Services",
+          "icon": "🎓",
+          "description": "Scholarship application assistance.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://scholarships.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Scholarship Services.",
+          "tags": [
+            "Scholarship Services"
+          ]
+        },
+        {
+          "id": "uidai-information",
+          "name": "Aadhaar Information (UIDAI Link)",
+          "icon": "🔐",
+          "description": "Official UIDAI information and services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://uidai.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Aadhaar Information (UIDAI Link).",
+          "tags": [
+            "Aadhaar Information (UIDAI Link)"
+          ]
+        },
+        {
+          "id": "pmay-urban",
+          "name": "PMAY-Urban/Sehri",
+          "icon": "🏘️",
+          "description": "Pradhan Mantri Awas Yojana - Urban services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://pmay-urban.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PMAY-Urban/Sehri.",
+          "tags": [
+            "PMAY-Urban/Sehri"
+          ]
+        },
+        {
+          "id": "pmay-gramin",
+          "name": "PMAY-Gramin",
+          "icon": "🏠",
+          "description": "Pradhan Mantri Awaas Yojana - Gramin services.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://pmayg.nic.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PMAY-Gramin.",
+          "tags": [
+            "PMAY-Gramin"
+          ]
+        },
+        {
+          "id": "pm-kisan-samman",
+          "name": "PM Kisan (Kisan Samman Nidhi)",
+          "icon": "🌾",
+          "description": "PM-KISAN registration, status and eKYC.",
+          "badge": "",
+          "accent": "#6f42c1",
+          "officialUrl": "https://pmkisan.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PM Kisan (Kisan Samman Nidhi).",
+          "tags": [
+            "PM Kisan (Kisan Samman Nidhi)"
+          ]
+        }
+      ]
+    }
+  ]
+}
