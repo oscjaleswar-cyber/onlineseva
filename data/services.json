@@ -130,7 +130,7 @@
           "description": "Aadhaar-related online services and guidance.",
           "badge": "new",
           "accent": "#0d6efd",
-          "officialUrl": "https://uidai.gov.in/",
+          "officialUrl": "https://tathya.uidai.gov.in/access/login?role=resident",
           "image": "",
           "enabled": true,
           "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Aadhaar Services.",
