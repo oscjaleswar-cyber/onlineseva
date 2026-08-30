@@ -201,11 +201,11 @@
         {
           "id": "Agri-Stack",
           "name": "Agri-Stack",
-          "icon": "🧩",
+          "icon": "",
           "description": "Add a new service card from services.json.",
           "badge": "new",
           "accent": "#0d6efd",
-          "officialUrl": "#",
+          "officialUrl": "https://odfr.agristack.gov.in/farmer-registry-od/#/",
           "image": "../images/Agri-Stack.png",
           "enabled": true,
           "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: New Service Post.",
