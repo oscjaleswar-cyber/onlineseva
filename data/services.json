@@ -199,14 +199,14 @@
           ]
         },
         {
-          "id": "new-service",
-          "name": "New Service Post",
+          "id": "Agri-Stack",
+          "name": "Agri-Stack",
           "icon": "🧩",
           "description": "Add a new service card from services.json.",
           "badge": "new",
           "accent": "#0d6efd",
           "officialUrl": "#",
-          "image": "",
+          "image": "../images/Agri-Stack.png",
           "enabled": true,
           "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: New Service Post.",
           "tags": [
@@ -576,14 +576,14 @@
       "accent": "purple",
       "services": [
         {
-          "id": "census",
-          "name": "Census Of India",
+          "id": "Bhu-Lekh",
+          "name": "Bhu-Lekh",
           "icon": "🏛️",
           "description": "Census-related information and official portal access.",
           "badge": "",
           "accent": "#6f42c1",
           "officialUrl": "https://censusindia.gov.in/",
-          "image": "",
+          "image": "../images/bhu-lekh.png",
           "enabled": true,
           "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Census Of India.",
           "tags": [
