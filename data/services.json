@@ -146,7 +146,7 @@
           "badge": "new",
           "accent": "#0d6efd",
           "officialUrl": "https://voters.eci.gov.in/login",
-          "image": "",
+          "image": "../images/votorid-card.png",
           "enabled": true,
           "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Voter ID Services.",
           "tags": [
