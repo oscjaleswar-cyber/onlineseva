@@ -156,14 +156,30 @@ async function loadCustomers() {
   const { data, error } = await APP.supabase.from("profiles").select("id, full_name, username, contact_email, role, is_active, created_at").order("created_at", { ascending: false });
   if (error) { body.innerHTML = '<tr><td colspan="4">Customer list ଖୋଲିହେଲା ନାହିଁ। RLS Policy ଯାଞ୍ଚ କରନ୍ତୁ।</td></tr>'; return; }
   if (!data?.length) { body.innerHTML = '<tr><td colspan="4">କୌଣସି Customer ନାହାନ୍ତି।</td></tr>'; return; }
-  body.innerHTML = data.map(c => `<tr><td>${escapeHtml(c.full_name || "Customer")}${c.role === "admin" ? ' <span class="admin-tag">ADMIN</span>' : ""}</td><td>${escapeHtml(c.username || "")}</td><td><span class="status-pill ${c.is_active ? "active" : "inactive"}">${c.is_active ? "Active" : "Inactive"}</span></td><td>${c.role === "admin" ? "—" : `<button class="customer-toggle ${c.is_active ? "disable" : "enable"}" data-id="${escapeAttr(c.id)}" data-active="${c.is_active ? "true" : "false"}">${c.is_active ? "Deactivate" : "Activate"}</button>`}</td></tr>`).join("");
+  body.innerHTML = data.map(c => `<tr><td>${escapeHtml(c.full_name || "Customer")}${c.role === "admin" ? ' <span class="admin-tag">ADMIN</span>' : ""}</td><td>${escapeHtml(c.username || "")}</td><td><span class="status-pill ${c.is_active ? "active" : "inactive"}">${c.is_active ? "Active" : "Inactive"}</span></td><td>${c.role === "admin" ? "—" : `<div class="customer-actions"><button class="customer-toggle ${c.is_active ? "disable" : "enable"}" data-id="${escapeAttr(c.id)}" data-active="${c.is_active ? "true" : "false"}">${c.is_active ? "Deactivate" : "Activate"}</button><button class="customer-delete" data-id="${escapeAttr(c.id)}" data-name="${escapeAttr(c.full_name || c.username || "Customer")}">Delete</button></div>`}</td></tr>`).join("");
   body.querySelectorAll(".customer-toggle").forEach(button => button.addEventListener("click", () => updateCustomerStatus(button.dataset.id, button.dataset.active !== "true")));
+  body.querySelectorAll(".customer-delete").forEach(button => button.addEventListener("click", () => deleteCustomer(button.dataset.id, button.dataset.name)));
 }
 
 async function updateCustomerStatus(id, is_active) {
   const { error } = await APP.supabase.from("profiles").update({ is_active }).eq("id", id);
   const msg = document.getElementById("adminMessage"); msg.textContent = error ? `Update failed: ${error.message}` : `Customer account ${is_active ? "Activated" : "Deactivated"}.`;
   if (!error) await loadCustomers();
+}
+
+async function deleteCustomer(id, customerName) {
+  if (APP.profile?.role !== "admin") return;
+  const confirmed = window.confirm(`"${customerName}" ଙ୍କ Customer Account ସ୍ଥାୟୀ ଭାବେ Delete କରିବେ କି? ଏହା ପୁଣି ଫେରାଇ ଆଣିହେବ ନାହିଁ।`);
+  if (!confirmed) return;
+  const msg = document.getElementById("adminMessage");
+  msg.textContent = "Deleting customer account...";
+  const { error } = await APP.supabase.rpc("admin_delete_customer", { target_user_id: id });
+  if (error) {
+    msg.textContent = `Delete failed: ${error.message}. Supabase ର customer-delete-function.sql migration ଚଲାଇଛନ୍ତି କି ଯାଞ୍ଚ କରନ୍ତୁ।`;
+    return;
+  }
+  msg.textContent = `Customer "${customerName}" ସଫଳତାର ସହିତ Delete ହୋଇଛନ୍ତି।`;
+  await loadCustomers();
 }
 
 function initTheme() {
