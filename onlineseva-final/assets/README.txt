@@ -1,0 +1,1 @@
+Put your own PNG/JPG/WebP service images here and set the image field in data/services.json, e.g. assets/pan.png
