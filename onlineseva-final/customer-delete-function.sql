@@ -16,9 +16,12 @@ begin
     raise exception 'Invalid customer account';
   end if;
 
-  delete from auth.users
-  where id = target_user_id
-    and coalesce(raw_user_meta_data->>'username', '') <> '';
+  delete from auth.users u
+  where u.id = target_user_id
+    and exists (
+      select 1 from public.profiles p
+      where p.id = u.id and p.role = 'customer'
+    );
 
   if not found then
     raise exception 'Customer account not found or not eligible for deletion';
