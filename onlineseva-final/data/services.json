@@ -63,7 +63,7 @@
             "Mock Test"
           ]
         },
-         {
+        {
           "id": "Nirman Shramik",
           "name": "Nirman Shramik",
           "icon": "📝",
@@ -452,6 +452,27 @@
           "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Merge PDF.",
           "tags": [
             "Merge PDF"
+          ]
+        },
+        {
+          "id": "smart-croper-id-auto-print",
+          "name": "Smart Croper – ID Auto Crop & Print",
+          "icon": "🪪",
+          "description": "Any Indian ID card PDF/photo କୁ auto-crop କରନ୍ତୁ। Front & back ଦୁଇ ପଟକୁ 4×6 photo paper କିମ୍ବା A4 print layout ରେ ପ୍ରସ୍ତୁତ କରନ୍ତୁ। Password-protected PDF ମଧ୍ୟ browser ରେ ଖୋଲିପାରିବ।",
+          "badge": "new",
+          "accent": "#0d6efd",
+          "officialUrl": "https://smartcroper.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with Smart Croper ID Auto Crop & Print.",
+          "tags": [
+            "Smart Croper",
+            "ID Card Auto Crop",
+            "ID Card PDF",
+            "Front Back Print",
+            "4x6 Print",
+            "A4 Print",
+            "PVC Card"
           ]
         }
       ]
