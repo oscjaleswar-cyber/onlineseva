@@ -1315,6 +1315,159 @@
           "tags": [
             "PM Kisan (Kisan Samman Nidhi)"
           ]
+        },
+        {
+          "id": "resident-certificate",
+          "name": "Residence Certificate",
+          "icon": "🏠",
+          "description": "Apply for an Odisha residence certificate through the official e-District portal.",
+          "badge": "new",
+          "accent": "#6f42c1",
+          "officialUrl": "https://edistrict.odisha.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Residence Certificate.",
+          "tags": [
+            "Residence Certificate",
+            "Odisha e-District",
+            "Certificate"
+          ]
+        },
+        {
+          "id": "income-certificate",
+          "name": "Income Certificate",
+          "icon": "💰",
+          "description": "Apply for an Odisha income certificate through the official e-District portal.",
+          "badge": "new",
+          "accent": "#6f42c1",
+          "officialUrl": "https://edistrict.odisha.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Income Certificate.",
+          "tags": [
+            "Income Certificate",
+            "Odisha e-District",
+            "Certificate"
+          ]
+        },
+        {
+          "id": "caste-certificate",
+          "name": "Caste Certificate (SC/ST)",
+          "icon": "📜",
+          "description": "Apply for an Odisha SC/ST caste certificate through the official e-District portal.",
+          "badge": "new",
+          "accent": "#6f42c1",
+          "officialUrl": "https://edistrict.odisha.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Caste Certificate (SC/ST).",
+          "tags": [
+            "Caste Certificate (SC/ST)",
+            "Odisha e-District",
+            "Certificate"
+          ]
+        },
+        {
+          "id": "legal-heir-certificate",
+          "name": "Legal Heir Certificate",
+          "icon": "👨‍👩‍👧",
+          "description": "Information and application access for Odisha Legal Heir Certificate.",
+          "badge": "new",
+          "accent": "#6f42c1",
+          "officialUrl": "https://edistrict.odisha.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Legal Heir Certificate.",
+          "tags": [
+            "Legal Heir Certificate",
+            "Odisha e-District",
+            "Certificate"
+          ]
+        },
+        {
+          "id": "sebc-certificate",
+          "name": "SEBC Certificate",
+          "icon": "📄",
+          "description": "Apply for an Odisha SEBC certificate through the official e-District portal.",
+          "badge": "new",
+          "accent": "#6f42c1",
+          "officialUrl": "https://edistrict.odisha.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: SEBC Certificate.",
+          "tags": [
+            "SEBC Certificate",
+            "Odisha e-District",
+            "Certificate"
+          ]
+        },
+        {
+          "id": "obc-certificate",
+          "name": "OBC Certificate",
+          "icon": "📄",
+          "description": "Apply for an Odisha OBC certificate through the official e-District portal.",
+          "badge": "new",
+          "accent": "#6f42c1",
+          "officialUrl": "https://edistrict.odisha.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: OBC Certificate.",
+          "tags": [
+            "OBC Certificate",
+            "Odisha e-District",
+            "Certificate"
+          ]
+        },
+        {
+          "id": "solvency-certificate",
+          "name": "Solvency Certificate",
+          "icon": "🏦",
+          "description": "Apply for an Odisha solvency certificate through the official e-District portal.",
+          "badge": "new",
+          "accent": "#6f42c1",
+          "officialUrl": "https://edistrict.odisha.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Solvency Certificate.",
+          "tags": [
+            "Solvency Certificate",
+            "Odisha e-District",
+            "Certificate"
+          ]
+        },
+        {
+          "id": "guardianship-certificate",
+          "name": "Guardianship Certificate",
+          "icon": "🧾",
+          "description": "Information and application access for Odisha Guardianship Certificate.",
+          "badge": "new",
+          "accent": "#6f42c1",
+          "officialUrl": "https://edistrict.odisha.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Guardianship Certificate.",
+          "tags": [
+            "Guardianship Certificate",
+            "Odisha e-District",
+            "Certificate"
+          ]
+        },
+        {
+          "id": "income-asset-certificate",
+          "name": "Income & Asset Certificate (EWS)",
+          "icon": "📑",
+          "description": "Apply for an Odisha income and asset certificate through the official e-District portal.",
+          "badge": "new",
+          "accent": "#6f42c1",
+          "officialUrl": "https://edistrict.odisha.gov.in/",
+          "image": "",
+          "enabled": true,
+          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Income & Asset Certificate (EWS).",
+          "tags": [
+            "Income & Asset Certificate (EWS)",
+            "Odisha e-District",
+            "Certificate"
+          ]
         }
       ]
     }
