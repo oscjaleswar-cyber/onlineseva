@@ -1,7 +1,7 @@
 {
   "config": {
     "brand": {
-      "name": "Online Solution Dunia",
+      "name": "Online Solution",
       "shortName": "OSD",
       "tagline": "Digital Services • Online Applications • Design & Print",
       "description": "Your one-stop online communication and digital service centre.",
@@ -23,7 +23,7 @@
       "allowSystem": true
     },
     "footer": {
-      "note": "Online Solution Dunia is a private digital service centre. Government/official portals open in a new tab."
+      "note": "Online Solution is a private digital service centre. Government/official portals open in a new tab."
     }
   },
   "categories": [
@@ -43,7 +43,7 @@
           "officialUrl": "https://www.freejobalert.com/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Latest Jobs.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Latest Jobs.",
           "tags": [
             "Latest Jobs"
           ]
@@ -58,7 +58,7 @@
           "officialUrl": "https://www.ixambee.com/free-mock-tests",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Mock Test.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Mock Test.",
           "tags": [
             "Mock Test"
           ]
@@ -73,7 +73,7 @@
           "officialUrl": "https://nirmanshramik.odisha.gov.in/obocwwb/public/cwLogin",
           "image": "../images/nirman-shramik.png",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Mock Test.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Mock Test.",
           "tags": [
             "Mock Test"
           ]
@@ -88,7 +88,7 @@
           "officialUrl": "https://www.foododisha.in/citizenservice.asp?GL=eservice&lnk=29",
           "image": "../images/Ration-Card.png",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Mock Test.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Mock Test.",
           "tags": [
             "Mock Test"
           ]
@@ -103,7 +103,7 @@
           "officialUrl": "https://www.idcardgeneratoronline.com/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: ID Card Print.",
+          "whatsappMessage": "Hello Online Solution, I want help with: ID Card Print.",
           "tags": [
             "ID Card Print"
           ]
@@ -118,7 +118,7 @@
           "officialUrl": "https://egovcsc.csccloud.in/nsdl/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PAN Card Apply.",
+          "whatsappMessage": "Hello Online Solution, I want help with: PAN Card Apply.",
           "tags": [
             "PAN Card Apply"
           ]
@@ -133,7 +133,7 @@
           "officialUrl": "https://tathya.uidai.gov.in/access/login?role=resident",
           "image": "../images/aadhar-card.png",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Aadhaar Services.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Aadhaar Services.",
           "tags": [
             "Aadhaar Services"
           ]
@@ -148,7 +148,7 @@
           "officialUrl": "https://voters.eci.gov.in/login",
           "image": "../images/votorid-card.png",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Voter ID Services.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Voter ID Services.",
           "tags": [
             "Voter ID Services"
           ]
@@ -163,7 +163,7 @@
           "officialUrl": "https://passportsizephoto.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Passport Photo.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Passport Photo.",
           "tags": [
             "Passport Photo"
           ]
@@ -178,7 +178,7 @@
           "officialUrl": "https://image.pi7.org/resize-for-pan-card",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Photo Crop & Resize.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Photo Crop & Resize.",
           "tags": [
             "Photo Crop & Resize"
           ]
@@ -193,7 +193,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Resume / CV.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Resume / CV.",
           "tags": [
             "Resume / CV"
           ]
@@ -208,7 +208,7 @@
           "officialUrl": "https://odfr.agristack.gov.in/farmer-registry-od/#/",
           "image": "../images/Agri-Stack.png",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: New Service Post.",
+          "whatsappMessage": "Hello Online Solution, I want help with: New Service Post.",
           "tags": [
             "New Service Post"
           ]
@@ -223,7 +223,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Document Album.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Document Album.",
           "tags": [
             "Document Album"
           ]
@@ -238,7 +238,7 @@
           "officialUrl": "https://www.protean-tinpan.com/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: NSDL PAAM ID.",
+          "whatsappMessage": "Hello Online Solution, I want help with: NSDL PAAM ID.",
           "tags": [
             "NSDL PAAM ID"
           ]
@@ -253,7 +253,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Payment / Locked QR.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Payment / Locked QR.",
           "tags": [
             "Payment / Locked QR"
           ]
@@ -276,7 +276,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Pro Resume Maker.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Pro Resume Maker.",
           "tags": [
             "Pro Resume Maker"
           ]
@@ -291,7 +291,7 @@
           "officialUrl": "https://weddingbiodatabuilder.in/create",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Marriage Biodata.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Marriage Biodata.",
           "tags": [
             "Marriage Biodata"
           ]
@@ -306,7 +306,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Pro ID Maker.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Pro ID Maker.",
           "tags": [
             "Pro ID Maker"
           ]
@@ -321,7 +321,7 @@
           "officialUrl": "https://www.template.net/ai-poster-generator",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Pro Poster Maker.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Pro Poster Maker.",
           "tags": [
             "Pro Poster Maker"
           ]
@@ -336,7 +336,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Application Maker.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Application Maker.",
           "tags": [
             "Application Maker"
           ]
@@ -351,7 +351,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Shop Promotion Maker.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Shop Promotion Maker.",
           "tags": [
             "Shop Promotion Maker"
           ]
@@ -374,7 +374,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: JPG To PDF.",
+          "whatsappMessage": "Hello Online Solution, I want help with: JPG To PDF.",
           "tags": [
             "JPG To PDF"
           ]
@@ -389,7 +389,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PDF To JPG.",
+          "whatsappMessage": "Hello Online Solution, I want help with: PDF To JPG.",
           "tags": [
             "PDF To JPG"
           ]
@@ -404,7 +404,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PNG To PDF.",
+          "whatsappMessage": "Hello Online Solution, I want help with: PNG To PDF.",
           "tags": [
             "PNG To PDF"
           ]
@@ -419,7 +419,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PNG To JPG.",
+          "whatsappMessage": "Hello Online Solution, I want help with: PNG To JPG.",
           "tags": [
             "PNG To JPG"
           ]
@@ -434,7 +434,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Delete PDF Page.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Delete PDF Page.",
           "tags": [
             "Delete PDF Page"
           ]
@@ -449,7 +449,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Merge PDF.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Merge PDF.",
           "tags": [
             "Merge PDF"
           ]
@@ -464,7 +464,7 @@
           "officialUrl": "https://smartcroper.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with Smart Croper ID Auto Crop & Print.",
+          "whatsappMessage": "Hello Online Solution, I want help with Smart Croper ID Auto Crop & Print.",
           "tags": [
             "Smart Croper",
             "ID Card Auto Crop",
@@ -493,7 +493,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Unique ID Card Print.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Unique ID Card Print.",
           "tags": [
             "Unique ID Card Print"
           ]
@@ -508,7 +508,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Election Card Print.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Election Card Print.",
           "tags": [
             "Election Card Print"
           ]
@@ -523,7 +523,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Health Plan Card Print.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Health Plan Card Print.",
           "tags": [
             "Health Plan Card Print"
           ]
@@ -538,7 +538,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Tax Id Card Print.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Tax Id Card Print.",
           "tags": [
             "Tax Id Card Print"
           ]
@@ -553,7 +553,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Driving Permit Print.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Driving Permit Print.",
           "tags": [
             "Driving Permit Print"
           ]
@@ -568,7 +568,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: School/College ID.",
+          "whatsappMessage": "Hello Online Solution, I want help with: School/College ID.",
           "tags": [
             "School/College ID"
           ]
@@ -583,7 +583,7 @@
           "officialUrl": "#",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Food Subsidy Card Print.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Food Subsidy Card Print.",
           "tags": [
             "Food Subsidy Card Print"
           ]
@@ -606,7 +606,7 @@
           "officialUrl": "https://censusindia.gov.in/",
           "image": "../images/bhu-lekh.png",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Census Of India.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Census Of India.",
           "tags": [
             "Census Of India"
           ]
@@ -621,7 +621,7 @@
           "officialUrl": "https://myaadhaar.uidai.gov.in/en_IN",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Aadhaar Beta Service.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Aadhaar Beta Service.",
           "tags": [
             "Aadhaar Beta Service"
           ]
@@ -636,7 +636,7 @@
           "officialUrl": "https://uidai.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Aadhaar Information (UIDAI Link).",
+          "whatsappMessage": "Hello Online Solution, I want help with: Aadhaar Information (UIDAI Link).",
           "tags": [
             "Aadhaar Information (UIDAI Link)"
           ]
@@ -651,7 +651,7 @@
           "officialUrl": "https://www.pan.utiitsl.com/PAN/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PAN Card Service.",
+          "whatsappMessage": "Hello Online Solution, I want help with: PAN Card Service.",
           "tags": [
             "PAN Card Service"
           ]
@@ -666,7 +666,7 @@
           "officialUrl": "https://voters.eci.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Voter ID Correction & Status.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Voter ID Correction & Status.",
           "tags": [
             "Voter ID Correction & Status"
           ]
@@ -681,7 +681,7 @@
           "officialUrl": "https://pmjay.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Ayushman Bharat (PM-JAY).",
+          "whatsappMessage": "Hello Online Solution, I want help with: Ayushman Bharat (PM-JAY).",
           "tags": [
             "Ayushman Bharat (PM-JAY)"
           ]
@@ -696,7 +696,7 @@
           "officialUrl": "https://sarathi.parivahan.gov.in/sarathiservice/sarathiHomePublic.do",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Driving Licence Service.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Driving Licence Service.",
           "tags": [
             "Driving Licence Service"
           ]
@@ -711,7 +711,7 @@
           "officialUrl": "https://vahan.parivahan.gov.in/vahanservice/vahan/ui/onlineservice/form_print_Rc.xhtml",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: RC Service (Registration).",
+          "whatsappMessage": "Hello Online Solution, I want help with: RC Service (Registration).",
           "tags": [
             "RC Service (Registration)"
           ]
@@ -726,7 +726,7 @@
           "officialUrl": "https://sarathi.parivahan.gov.in/sarathiservice/sarathiHomePublic.do",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Vehicle Service.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Vehicle Service.",
           "tags": [
             "Vehicle Service"
           ]
@@ -741,7 +741,7 @@
           "officialUrl": "https://www.birthdeath.odisha.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Birth & Death Certificate.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Birth & Death Certificate.",
           "tags": [
             "Birth & Death Certificate"
           ]
@@ -756,7 +756,7 @@
           "officialUrl": "https://echallan.parivahan.gov.in/index/accused-Challan",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: E-Challan.",
+          "whatsappMessage": "Hello Online Solution, I want help with: E-Challan.",
           "tags": [
             "E-Challan"
           ]
@@ -771,7 +771,7 @@
           "officialUrl": "https://register.eshram.gov.in/#/user/self",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: E-Shram Card.",
+          "whatsappMessage": "Hello Online Solution, I want help with: E-Shram Card.",
           "tags": [
             "E-Shram Card"
           ]
@@ -786,7 +786,7 @@
           "officialUrl": "https://www.abc.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: APAAR ID Card.",
+          "whatsappMessage": "Hello Online Solution, I want help with: APAAR ID Card.",
           "tags": [
             "APAAR ID Card"
           ]
@@ -801,7 +801,7 @@
           "officialUrl": "https://abha.abdm.gov.in/abha/v3",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: ABHA Card.",
+          "whatsappMessage": "Hello Online Solution, I want help with: ABHA Card.",
           "tags": [
             "ABHA Card"
           ]
@@ -816,7 +816,7 @@
           "officialUrl": "https://pmfby.gov.in/csclogin",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Pradhan Mantri Fasal Bima Yojana. throw CSC",
+          "whatsappMessage": "Hello Online Solution, I want help with: Pradhan Mantri Fasal Bima Yojana. throw CSC",
           "tags": [
             "Pradhan Mantri Fasal Bima Yojana"
           ]
@@ -831,7 +831,7 @@
           "officialUrl": "https://pmaymis.gov.in/PMAYMIS2_2024/PMAY_SURVEY/Applicant_Login.aspx",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PMAY-Urban.",
+          "whatsappMessage": "Hello Online Solution, I want help with: PMAY-Urban.",
           "tags": [
             "PMAY-Urban"
           ]
@@ -846,7 +846,7 @@
           "officialUrl": "https://pmayg.dord.gov.in/infoapp.html",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PMAY-gramin / Seheri.",
+          "whatsappMessage": "Hello Online Solution, I want help with: PMAY-gramin / Seheri.",
           "tags": [
             "PMAY-Gramin"
           ]
@@ -861,7 +861,7 @@
           "officialUrl": "https://unifiedportal-mem.epfindia.gov.in/memberinterface/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: EPFO (Employee Provident Fund).",
+          "whatsappMessage": "Hello Online Solution, I want help with: EPFO (Employee Provident Fund).",
           "tags": [
             "EPFO (Employee Provident Fund)"
           ]
@@ -876,7 +876,7 @@
           "officialUrl": "https://licindia.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: LIC Service.",
+          "whatsappMessage": "Hello Online Solution, I want help with: LIC Service.",
           "tags": [
             "LIC Service"
           ]
@@ -891,7 +891,7 @@
           "officialUrl": "https://www.enam.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: e-NAM.",
+          "whatsappMessage": "Hello Online Solution, I want help with: e-NAM.",
           "tags": [
             "e-NAM"
           ]
@@ -906,7 +906,7 @@
           "officialUrl": "https://pmsvanidhi.mohua.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PM SVANidhi Yojana.",
+          "whatsappMessage": "Hello Online Solution, I want help with: PM SVANidhi Yojana.",
           "tags": [
             "PM SVANidhi Yojana"
           ]
@@ -921,7 +921,7 @@
           "officialUrl": "https://soilhealth.dac.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Soil Health Card.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Soil Health Card.",
           "tags": [
             "Soil Health Card"
           ]
@@ -936,7 +936,7 @@
           "officialUrl": "https://mkisan.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: MKisan Portal.",
+          "whatsappMessage": "Hello Online Solution, I want help with: MKisan Portal.",
           "tags": [
             "MKisan Portal"
           ]
@@ -951,7 +951,7 @@
           "officialUrl": "https://pmsuryaghar.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PM Surya Ghar Yojana.",
+          "whatsappMessage": "Hello Online Solution, I want help with: PM Surya Ghar Yojana.",
           "tags": [
             "PM Surya Ghar Yojana"
           ]
@@ -966,7 +966,7 @@
           "officialUrl": "https://udyamregistration.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Udyam Aadhaar / MSME.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Udyam Aadhaar / MSME.",
           "tags": [
             "Udyam Aadhaar / MSME"
           ]
@@ -981,7 +981,7 @@
           "officialUrl": "https://scholarships.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: National Scholarship Portal.",
+          "whatsappMessage": "Hello Online Solution, I want help with: National Scholarship Portal.",
           "tags": [
             "National Scholarship Portal"
           ]
@@ -996,7 +996,7 @@
           "officialUrl": "https://www.ceir.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Lost/Found Mobile & Internet.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Lost/Found Mobile & Internet.",
           "tags": [
             "Lost/Found Mobile & Internet"
           ]
@@ -1011,7 +1011,7 @@
           "officialUrl": "https://www.irctc.co.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Railway Service.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Railway Service.",
           "tags": [
             "Railway Service"
           ]
@@ -1026,7 +1026,7 @@
           "officialUrl": "https://www.passportindia.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Passport Seva Service.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Passport Seva Service.",
           "tags": [
             "Passport Seva Service"
           ]
@@ -1041,7 +1041,7 @@
           "officialUrl": "https://pmkisan.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PM Kisan.",
+          "whatsappMessage": "Hello Online Solution, I want help with: PM Kisan.",
           "tags": [
             "PM Kisan"
           ]
@@ -1056,7 +1056,7 @@
           "officialUrl": "https://www.gst.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: GST Verification.",
+          "whatsappMessage": "Hello Online Solution, I want help with: GST Verification.",
           "tags": [
             "GST Verification"
           ]
@@ -1071,7 +1071,7 @@
           "officialUrl": "https://parivahan.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Checkpost Tax / Road Tax.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Checkpost Tax / Road Tax.",
           "tags": [
             "Checkpost Tax / Road Tax"
           ]
@@ -1086,7 +1086,7 @@
           "officialUrl": "https://parivahan.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Vahan Green Sewa.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Vahan Green Sewa.",
           "tags": [
             "Vahan Green Sewa"
           ]
@@ -1101,7 +1101,7 @@
           "officialUrl": "https://puc.parivahan.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PUC Service.",
+          "whatsappMessage": "Hello Online Solution, I want help with: PUC Service.",
           "tags": [
             "PUC Service"
           ]
@@ -1116,7 +1116,7 @@
           "officialUrl": "https://www.npci.org.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: National Payments Corporation of India.",
+          "whatsappMessage": "Hello Online Solution, I want help with: National Payments Corporation of India.",
           "tags": [
             "National Payments Corporation of India"
           ]
@@ -1131,7 +1131,7 @@
           "officialUrl": "https://consumerhelpline.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: National Consumer Helpline.",
+          "whatsappMessage": "Hello Online Solution, I want help with: National Consumer Helpline.",
           "tags": [
             "National Consumer Helpline"
           ]
@@ -1146,7 +1146,7 @@
           "officialUrl": "https://www.ncs.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: National Career Service.",
+          "whatsappMessage": "Hello Online Solution, I want help with: National Career Service.",
           "tags": [
             "National Career Service"
           ]
@@ -1161,7 +1161,7 @@
           "officialUrl": "https://www.cibil.com/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Check Free CIBIL Score.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Check Free CIBIL Score.",
           "tags": [
             "Check Free CIBIL Score"
           ]
@@ -1176,7 +1176,7 @@
           "officialUrl": "https://iocl.com/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: INDANE GAS.",
+          "whatsappMessage": "Hello Online Solution, I want help with: INDANE GAS.",
           "tags": [
             "INDANE GAS"
           ]
@@ -1191,7 +1191,7 @@
           "officialUrl": "https://myhpgas.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: HP GAS.",
+          "whatsappMessage": "Hello Online Solution, I want help with: HP GAS.",
           "tags": [
             "HP GAS"
           ]
@@ -1206,7 +1206,7 @@
           "officialUrl": "https://www.ebharatgas.com/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: BHARAT GAS.",
+          "whatsappMessage": "Hello Online Solution, I want help with: BHARAT GAS.",
           "tags": [
             "BHARAT GAS"
           ]
@@ -1221,7 +1221,7 @@
           "officialUrl": "https://www.swavlambancard.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Unique Disability ID Card.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Unique Disability ID Card.",
           "tags": [
             "Unique Disability ID Card"
           ]
@@ -1236,7 +1236,7 @@
           "officialUrl": "https://www.digilocker.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: DigiLocker.",
+          "whatsappMessage": "Hello Online Solution, I want help with: DigiLocker.",
           "tags": [
             "DigiLocker"
           ]
@@ -1251,7 +1251,7 @@
           "officialUrl": "https://scholarships.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Scholarship Services.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Scholarship Services.",
           "tags": [
             "Scholarship Services"
           ]
@@ -1266,7 +1266,7 @@
           "officialUrl": "https://uidai.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Aadhaar Information (UIDAI Link).",
+          "whatsappMessage": "Hello Online Solution, I want help with: Aadhaar Information (UIDAI Link).",
           "tags": [
             "Aadhaar Information (UIDAI Link)"
           ]
@@ -1281,7 +1281,7 @@
           "officialUrl": "https://pmay-urban.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PMAY-Urban/Sehri.",
+          "whatsappMessage": "Hello Online Solution, I want help with: PMAY-Urban/Sehri.",
           "tags": [
             "PMAY-Urban/Sehri"
           ]
@@ -1296,7 +1296,7 @@
           "officialUrl": "https://pmayg.nic.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PMAY-Gramin.",
+          "whatsappMessage": "Hello Online Solution, I want help with: PMAY-Gramin.",
           "tags": [
             "PMAY-Gramin"
           ]
@@ -1311,7 +1311,7 @@
           "officialUrl": "https://pmkisan.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: PM Kisan (Kisan Samman Nidhi).",
+          "whatsappMessage": "Hello Online Solution, I want help with: PM Kisan (Kisan Samman Nidhi).",
           "tags": [
             "PM Kisan (Kisan Samman Nidhi)"
           ]
@@ -1326,7 +1326,7 @@
           "officialUrl": "https://edistrict.odisha.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Residence Certificate.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Residence Certificate.",
           "tags": [
             "Residence Certificate",
             "Odisha e-District",
@@ -1343,7 +1343,7 @@
           "officialUrl": "https://edistrict.odisha.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Income Certificate.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Income Certificate.",
           "tags": [
             "Income Certificate",
             "Odisha e-District",
@@ -1360,7 +1360,7 @@
           "officialUrl": "https://edistrict.odisha.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Caste Certificate (SC/ST).",
+          "whatsappMessage": "Hello Online Solution, I want help with: Caste Certificate (SC/ST).",
           "tags": [
             "Caste Certificate (SC/ST)",
             "Odisha e-District",
@@ -1377,7 +1377,7 @@
           "officialUrl": "https://edistrict.odisha.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Legal Heir Certificate.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Legal Heir Certificate.",
           "tags": [
             "Legal Heir Certificate",
             "Odisha e-District",
@@ -1394,7 +1394,7 @@
           "officialUrl": "https://edistrict.odisha.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: SEBC Certificate.",
+          "whatsappMessage": "Hello Online Solution, I want help with: SEBC Certificate.",
           "tags": [
             "SEBC Certificate",
             "Odisha e-District",
@@ -1411,7 +1411,7 @@
           "officialUrl": "https://edistrict.odisha.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: OBC Certificate.",
+          "whatsappMessage": "Hello Online Solution, I want help with: OBC Certificate.",
           "tags": [
             "OBC Certificate",
             "Odisha e-District",
@@ -1428,7 +1428,7 @@
           "officialUrl": "https://edistrict.odisha.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Solvency Certificate.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Solvency Certificate.",
           "tags": [
             "Solvency Certificate",
             "Odisha e-District",
@@ -1445,7 +1445,7 @@
           "officialUrl": "https://edistrict.odisha.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Guardianship Certificate.",
+          "whatsappMessage": "Hello Online Solution, I want help with: Guardianship Certificate.",
           "tags": [
             "Guardianship Certificate",
             "Odisha e-District",
@@ -1462,7 +1462,7 @@
           "officialUrl": "https://edistrict.odisha.gov.in/",
           "image": "",
           "enabled": true,
-          "whatsappMessage": "Hello Rajeeb Online Workshop, I want help with: Income & Asset Certificate (EWS).",
+          "whatsappMessage": "Hello Online Solution, I want help with: Income & Asset Certificate (EWS).",
           "tags": [
             "Income & Asset Certificate (EWS)",
             "Odisha e-District",
