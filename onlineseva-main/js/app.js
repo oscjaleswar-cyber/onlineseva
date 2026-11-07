@@ -50,7 +50,7 @@ function bindAuthForms() {
 
 function showAuthForm(name) {
   ["loginForm", "registerForm", "forgotForm", "updatePasswordForm"].forEach(id => document.getElementById(id)?.classList.toggle("d-none", id !== `${name}Form`));
-  const headings = { login: ["Welcome Back", "Login କରି ଆପଣଙ୍କ ସମସ୍ତ Online Services ଖୋଲନ୍ତୁ।"], register: ["Create Customer Account", "ନିଜର Account ଖୋଲି ସମସ୍ତ Service ବ୍ୟବହାର କରନ୍ତୁ।"], forgot: ["Reset Password", "Registered Email ରେ Password Reset Link ପଠାଯିବ।"], updatePassword: ["Choose New Password", "ଆପଣଙ୍କ Account ପାଇଁ ନୂଆ Password ସେଟ୍ କରନ୍ତୁ।"] };
+  const headings = { login: ["Welcome Back", "Username ଓ Password ଦେଇ ଆପଣଙ୍କ Online Services ଖୋଲନ୍ତୁ।"], register: ["Create Customer Account", "ନିଜର Customer ID ତିଆରି କରି ସମସ୍ତ Service ବ୍ୟବହାର କରନ୍ତୁ।"], forgot: ["Password Help", "Password Reset ପାଇଁ Admin ଙ୍କ ସହିତ ଯୋଗାଯୋଗ କରନ୍ତୁ।"], updatePassword: ["Choose New Password", "ଆପଣଙ୍କ Account ପାଇଁ ନୂଆ Password ସେଟ୍ କରନ୍ତୁ।"] };
   setText("authHeading", headings[name][0]); setText("authSubheading", headings[name][1]); showAuthNotice("");
 }
 
@@ -68,8 +68,9 @@ function setFormBusy(form, busy, label) {
 async function loginCustomer(event) {
   event.preventDefault(); const form = event.currentTarget; setFormBusy(form, true, "Logging in..."); showAuthNotice("");
   try {
-    const email = document.getElementById("loginEmail").value.trim(); const password = document.getElementById("loginPassword").value;
-    const { error } = await APP.supabase.auth.signInWithPassword({ email, password }); if (error) throw error;
+    const username = normalizeUsername(document.getElementById("loginUsername").value); const password = document.getElementById("loginPassword").value;
+    if (!isValidUsername(username)) throw new Error("Username ଠିକ୍ ଭାବେ ଲେଖନ୍ତୁ।");
+    const { error } = await APP.supabase.auth.signInWithPassword({ email: usernameToAuthEmail(username), password }); if (error) throw error;
   } catch (e) { showAuthNotice(authError(e), "error"); }
   finally { setFormBusy(form, false); }
 }
@@ -77,23 +78,20 @@ async function loginCustomer(event) {
 async function registerCustomer(event) {
   event.preventDefault(); const form = event.currentTarget; setFormBusy(form, true, "Creating account..."); showAuthNotice("");
   try {
-    const full_name = document.getElementById("registerName").value.trim(); const email = document.getElementById("registerEmail").value.trim(); const password = document.getElementById("registerPassword").value;
-    const { data, error } = await APP.supabase.auth.signUp({ email, password, options: { data: { full_name }, emailRedirectTo: location.origin + location.pathname } });
+    const full_name = document.getElementById("registerName").value.trim(); const username = normalizeUsername(document.getElementById("registerUsername").value); const contact_email = document.getElementById("registerContactEmail").value.trim(); const password = document.getElementById("registerPassword").value;
+    if (!isValidUsername(username)) throw new Error("Username 4-30 ଅକ୍ଷର ହେବା ଦରକାର। କେବଳ English letter, number, dot, underscore, hyphen ବ୍ୟବହାର କରନ୍ତୁ।");
+    if (password.length < 8) throw new Error("Password ଅତିକମରେ 8 ଅକ୍ଷର ରଖନ୍ତୁ।");
+    const { data, error } = await APP.supabase.auth.signUp({ email: usernameToAuthEmail(username), password, options: { data: { full_name, username, contact_email } } });
     if (error) throw error;
-    if (data.session) showAuthNotice("Account ସୃଷ୍ଟି ହୋଇଛି। ଆପଣ Login ହୋଇଗଲେ।");
-    else showAuthNotice("Registration ସଫଳ! ଆପଣଙ୍କ Email ଖୋଲି Confirmation Link ରେ Click କରନ୍ତୁ।");
+    if (data.session) showAuthNotice(`Registration ସଫଳ! ଆପଣଙ୍କ Customer ID: ${username} । ଏହାକୁ ସୁରକ୍ଷିତ ରଖନ୍ତୁ।`);
+    else showAuthNotice("Account ତିଆରି ହୋଇଛି। Supabase Email Confirmation OFF କରିଛନ୍ତି କି ଯାଞ୍ଚ କରନ୍ତୁ; Admin ସହିତ ଯୋଗାଯୋଗ କରନ୍ତୁ।");
   } catch (e) { showAuthNotice(authError(e), "error"); }
   finally { setFormBusy(form, false); }
 }
 
 async function sendPasswordReset(event) {
-  event.preventDefault(); const form = event.currentTarget; setFormBusy(form, true, "Sending link..."); showAuthNotice("");
-  try {
-    const email = document.getElementById("forgotEmail").value.trim();
-    const { error } = await APP.supabase.auth.resetPasswordForEmail(email, { redirectTo: location.origin + location.pathname }); if (error) throw error;
-    showAuthNotice("Password Reset Link ଆପଣଙ୍କ Email କୁ ପଠାଯାଇଛି। Email ଯାଞ୍ଚ କରନ୍ତୁ।");
-  } catch (e) { showAuthNotice(authError(e), "error"); }
-  finally { setFormBusy(form, false); }
+  event.preventDefault();
+  showAuthNotice("Username-based Login ରେ self-service Email Reset ଉପଲବ୍ଧ ନାହିଁ। ଆପଣଙ୍କ Customer ID କହି Admin ଙ୍କଠାରୁ Password Reset କରାନ୍ତୁ।", "error");
 }
 
 async function updatePassword(event) {
@@ -109,11 +107,17 @@ async function updatePassword(event) {
   finally { setFormBusy(form, false); }
 }
 
+function normalizeUsername(value) { return String(value || "").trim().toLowerCase(); }
+function isValidUsername(value) { return /^[a-z0-9._-]{4,30}$/.test(value); }
+// Supabase Auth accepts email/password. A reserved synthetic address maps each username to a unique Auth identity.
+// Email confirmation MUST be disabled for this username-only login design.
+function usernameToAuthEmail(username) { return `${username}@login.onlinesevajls.com`; }
+
 function authError(error) {
   const msg = String(error?.message || "Something went wrong");
-  if (/invalid login credentials/i.test(msg)) return "Email କିମ୍ବା Password ଠିକ୍ ନୁହେଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।";
-  if (/email not confirmed/i.test(msg)) return "ପ୍ରଥମେ ଆପଣଙ୍କ Email ର Confirmation Link ଖୋଲନ୍ତୁ।";
-  if (/already registered/i.test(msg)) return "ଏହି Email ରେ Account ପୂର୍ବରୁ ରହିଛି। Login କରନ୍ତୁ।";
+  if (/invalid login credentials/i.test(msg)) return "Username କିମ୍ବା Password ଠିକ୍ ନୁହେଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।";
+  if (/email not confirmed/i.test(msg)) return "Supabase ର Email Confirmation OFF କରନ୍ତୁ। Username Login ପାଇଁ ଏହା ଆବଶ୍ୟକ।";
+  if (/already registered/i.test(msg)) return "ଏହି Username ପୂର୍ବରୁ ବ୍ୟବହୃତ ହୋଇଛି। ଅନ୍ୟ Username ବାଛନ୍ତୁ।";
   return msg;
 }
 
@@ -125,12 +129,12 @@ function showAuthGate() {
 async function enterPortal(user) {
   if (!APP.supabase || !user) return;
   try {
-    const { data: profile, error } = await APP.supabase.from("profiles").select("id, full_name, email, role, is_active").eq("id", user.id).single();
+    const { data: profile, error } = await APP.supabase.from("profiles").select("id, full_name, username, contact_email, role, is_active").eq("id", user.id).single();
     if (error) throw error;
     if (!profile.is_active) { await APP.supabase.auth.signOut(); setTimeout(() => showAuthNotice("ଆପଣଙ୍କ Account ବର୍ତ୍ତମାନ Inactive ଅଛି। Admin ସହିତ ଯୋଗାଯୋଗ କରନ୍ତୁ।", "error"), 100); return; }
     APP.user = user; APP.profile = profile;
     document.getElementById("authGate")?.classList.add("d-none"); document.getElementById("portalApp")?.classList.remove("d-none");
-    setText("signedInName", profile.full_name || user.email); setText("signedInRole", profile.role === "admin" ? "ADMIN" : "CUSTOMER");
+    setText("signedInName", `${profile.full_name || "Customer"} (${profile.username || ""})`); setText("signedInRole", profile.role === "admin" ? "ADMIN" : "CUSTOMER");
     document.getElementById("adminPanel")?.classList.toggle("d-none", profile.role !== "admin");
     if (profile.role === "admin") await loadCustomers();
     if (!APP.data) {
@@ -145,10 +149,10 @@ async function enterPortal(user) {
 async function loadCustomers() {
   const body = document.getElementById("customerRows"); const msg = document.getElementById("adminMessage"); if (!body || APP.profile?.role !== "admin") return;
   body.innerHTML = '<tr><td colspan="4">Loading...</td></tr>'; msg.textContent = "";
-  const { data, error } = await APP.supabase.from("profiles").select("id, full_name, email, role, is_active, created_at").order("created_at", { ascending: false });
+  const { data, error } = await APP.supabase.from("profiles").select("id, full_name, username, contact_email, role, is_active, created_at").order("created_at", { ascending: false });
   if (error) { body.innerHTML = '<tr><td colspan="4">Customer list ଖୋଲିହେଲା ନାହିଁ। RLS Policy ଯାଞ୍ଚ କରନ୍ତୁ।</td></tr>'; return; }
   if (!data?.length) { body.innerHTML = '<tr><td colspan="4">କୌଣସି Customer ନାହାନ୍ତି।</td></tr>'; return; }
-  body.innerHTML = data.map(c => `<tr><td>${escapeHtml(c.full_name || "Customer")}${c.role === "admin" ? ' <span class="admin-tag">ADMIN</span>' : ""}</td><td>${escapeHtml(c.email || "")}</td><td><span class="status-pill ${c.is_active ? "active" : "inactive"}">${c.is_active ? "Active" : "Inactive"}</span></td><td>${c.role === "admin" ? "—" : `<button class="customer-toggle ${c.is_active ? "disable" : "enable"}" data-id="${escapeAttr(c.id)}" data-active="${c.is_active ? "true" : "false"}">${c.is_active ? "Deactivate" : "Activate"}</button>`}</td></tr>`).join("");
+  body.innerHTML = data.map(c => `<tr><td>${escapeHtml(c.full_name || "Customer")}${c.role === "admin" ? ' <span class="admin-tag">ADMIN</span>' : ""}</td><td>${escapeHtml(c.username || "")}</td><td><span class="status-pill ${c.is_active ? "active" : "inactive"}">${c.is_active ? "Active" : "Inactive"}</span></td><td>${c.role === "admin" ? "—" : `<button class="customer-toggle ${c.is_active ? "disable" : "enable"}" data-id="${escapeAttr(c.id)}" data-active="${c.is_active ? "true" : "false"}">${c.is_active ? "Deactivate" : "Activate"}</button>`}</td></tr>`).join("");
   body.querySelectorAll(".customer-toggle").forEach(button => button.addEventListener("click", () => updateCustomerStatus(button.dataset.id, button.dataset.active !== "true")));
 }
 

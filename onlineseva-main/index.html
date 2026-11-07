@@ -18,21 +18,21 @@
       <div class="auth-intro"><span class="auth-secure"><i class="bi bi-shield-lock-fill"></i> SECURE CUSTOMER ACCESS</span><h2 id="authHeading">Welcome Back</h2><p id="authSubheading">Login କରି ଆପଣଙ୍କ ସମସ୍ତ Online Services ଖୋଲନ୍ତୁ।</p></div>
       <div id="authNotice" class="auth-notice d-none" role="alert"></div>
       <form id="loginForm" class="auth-form">
-        <label for="loginEmail">Email / Customer ID</label><input id="loginEmail" type="email" autocomplete="username" placeholder="ଆପଣଙ୍କ Email ID" required>
+        <label for="loginUsername">Username / Customer ID</label><input id="loginUsername" type="text" autocomplete="username" placeholder="ଉଦାହରଣ: OSC1001" required maxlength="30" pattern="[A-Za-z0-9._-]+">
         <label for="loginPassword">Password</label><input id="loginPassword" type="password" autocomplete="current-password" placeholder="Password ଦିଅନ୍ତୁ" required minlength="6">
         <button class="auth-submit" type="submit"><i class="bi bi-box-arrow-in-right"></i> Login</button>
-        <div class="auth-links"><button type="button" id="showForgot">Forgot Password?</button><button type="button" id="showRegister">New Customer? Register</button></div>
+        <div class="auth-links"><button type="button" id="showForgot">Password ଭୁଲିଗଲେ?</button><button type="button" id="showRegister">ନୂଆ Customer? Register</button></div>
       </form>
       <form id="registerForm" class="auth-form d-none">
         <label for="registerName">Customer Name</label><input id="registerName" type="text" autocomplete="name" placeholder="ପୂରା ନାମ" required maxlength="80">
-        <label for="registerEmail">Email ID</label><input id="registerEmail" type="email" autocomplete="email" placeholder="ଆପଣଙ୍କ Email ID" required>
+        <label for="registerUsername">Choose Username / Customer ID</label><input id="registerUsername" type="text" autocomplete="username" placeholder="ଉଦାହରଣ: OSC1001" required minlength="4" maxlength="30" pattern="[A-Za-z0-9._-]+"><small class="text-muted">କେବଳ English letter, number, dot (.), underscore (_) କିମ୍ବା hyphen (-)।</small>
+        <label for="registerContactEmail">Email (ଇଚ୍ଛାଧୀନ, ଯୋଗାଯୋଗ ପାଇଁ)</label><input id="registerContactEmail" type="email" autocomplete="email" placeholder="ଆପଣଙ୍କ Email ID">
         <label for="registerPassword">Create Password</label><input id="registerPassword" type="password" autocomplete="new-password" placeholder="ଅତିକମରେ 6 ଅକ୍ଷର" required minlength="6">
         <button class="auth-submit" type="submit"><i class="bi bi-person-plus"></i> Create Account</button>
         <div class="auth-links"><button type="button" id="showLoginFromRegister">Already have an account? Login</button></div>
       </form>
       <form id="forgotForm" class="auth-form d-none">
-        <label for="forgotEmail">Registered Email ID</label><input id="forgotEmail" type="email" autocomplete="email" placeholder="ଆପଣଙ୍କ Email ID" required>
-        <button class="auth-submit" type="submit"><i class="bi bi-envelope"></i> Send Reset Link</button>
+        <p class="small text-muted">Username Login ରେ Email Reset Link ବ୍ୟବହାର ହୁଏ ନାହିଁ। Password ଭୁଲିଗଲେ Online Seva JLS Admin ଙ୍କ ସହିତ ଯୋଗାଯୋଗ କରନ୍ତୁ। Admin ଆପଣଙ୍କ Account ପାଇଁ ନୂଆ Password ସେଟ୍ କରିବେ।</p>
         <div class="auth-links"><button type="button" id="showLoginFromForgot">Back to Login</button></div>
       </form>
       <form id="updatePasswordForm" class="auth-form d-none">
@@ -46,7 +46,7 @@
   </section>
   <div id="portalApp" class="d-none">
     <div class="customer-session-bar"><span><i class="bi bi-person-circle"></i> <span id="signedInName">Customer</span></span><span id="signedInRole" class="session-role">CUSTOMER</span><button id="logoutButton" type="button"><i class="bi bi-box-arrow-right"></i> Logout</button></div>
-    <section id="adminPanel" class="admin-panel d-none"><div class="admin-panel-head"><div><h2><i class="bi bi-people-fill"></i> Customer Management</h2><p>Customer account ଗୁଡ଼ିକୁ Activate / Deactivate କରନ୍ତୁ।</p></div><button id="refreshCustomers" type="button"><i class="bi bi-arrow-clockwise"></i> Refresh</button></div><div id="adminMessage" class="admin-message" aria-live="polite"></div><div class="table-responsive"><table class="table table-sm align-middle"><thead><tr><th>Customer</th><th>Email</th><th>Status</th><th>Action</th></tr></thead><tbody id="customerRows"><tr><td colspan="4">Loading...</td></tr></tbody></table></div></section>
+    <section id="adminPanel" class="admin-panel d-none"><div class="admin-panel-head"><div><h2><i class="bi bi-people-fill"></i> Customer Management</h2><p>Customer account ଗୁଡ଼ିକୁ Activate / Deactivate କରନ୍ତୁ।</p></div><button id="refreshCustomers" type="button"><i class="bi bi-arrow-clockwise"></i> Refresh</button></div><div id="adminMessage" class="admin-message" aria-live="polite"></div><div class="table-responsive"><table class="table table-sm align-middle"><thead><tr><th>Customer</th><th>Username</th><th>Status</th><th>Action</th></tr></thead><tbody id="customerRows"><tr><td colspan="4">Loading...</td></tr></tbody></table></div></section>
   <div id="topProgress"></div>
 
   <nav class="navbar navbar-expand-lg sticky-top portal-nav">

@@ -1,44 +1,41 @@
-# Online Seva JLS — Customer Login Portal
+# Online Seva JLS — Username Customer Login
 
-ଏହି version ରେ ପୁରୁଣା Service Catalogue ରଖି Customer Login, Registration, Forgot Password, Logout ଏବଂ Admin Customer Management ଯୋଡ଼ାଯାଇଛି।
+ଏହି project ରେ ପୁରୁଣା Online Seva JLS Service Catalogue ରଖି Username + Password Customer Login ଯୋଡ଼ାଯାଇଛି। Customer ନିଜ Username ବାଛି Register କରିପାରିବେ।
 
-## 1) Supabase Project ତିଆରି କରନ୍ତୁ
-1. https://supabase.com/ ରେ account କରି New project ତିଆରି କରନ୍ତୁ।
-2. Project Dashboard → SQL Editor → New query ଖୋଲନ୍ତୁ।
-3. ଏହି Project ର `supabase-setup.sql` ଫାଇଲ୍ ର ସମସ୍ତ SQL paste କରି Run କରନ୍ତୁ।
-4. Authentication → URL Configuration ରେ Site URL ଭାବେ ଆପଣଙ୍କ Netlify URL ଦିଅନ୍ତୁ: `https://onlinesevajls.netlify.app`। Redirect URLs ରେ ଏହା ମଧ୍ୟ ଯୋଡ଼ନ୍ତୁ: `https://onlinesevajls.netlify.app/**`।
-5. Authentication → Providers → Email ରେ Email provider enabled ରଖନ୍ତୁ। Email confirmation ଚାଲୁ ରଖିବା ସୁପାରିଶ।
+## A. ଆପଣଙ୍କ ପୂର୍ବରୁ କରାଯାଇଥିବା Supabase Setup
+ଆପଣ ପୂର୍ବରୁ profiles table ତିଆରି କରିଛନ୍ତି। ଏବେ Supabase → SQL Editor → New Query ରେ `username-login-migration.sql` ର ସମସ୍ତ SQL paste କରି Run କରନ୍ତୁ। ଏହା ପୁରୁଣା profiles table ରେ username ଓ contact_email ଯୋଡ଼ିବ।
 
-## 2) Website କୁ Supabase ସହିତ ଯୋଡ଼ନ୍ତୁ
-1. Supabase → Project Settings → API ଖୋଲନ୍ତୁ।
-2. Project URL ଏବଂ `anon` / publishable public key copy କରନ୍ତୁ। `service_role` key କେବେ Website ରେ ରଖିବେ ନାହିଁ।
-3. `js/supabase-config.js` ଖୋଲି `YOUR_SUPABASE_PROJECT_URL` ଏବଂ `YOUR_SUPABASE_ANON_PUBLIC_KEY` ସ୍ଥାନରେ ନିଜର values ବସାନ୍ତୁ।
+## B. Username Login အାବଶ୍ୟକ Supabase Setting
+1. Supabase Dashboard → Authentication → Sign In / Providers → Email ଖୋଲନ୍ତୁ।
+2. Email provider Enabled ରଖନ୍ତୁ।
+3. **Confirm email / Email confirmations OFF** କରନ୍ତୁ। Username login ପାଇଁ ଏହା ଦରକାର, କାରଣ Auth ଭିତରେ username କୁ synthetic email identity ଭାବରେ ବ୍ୟବହାର କରାଯାଉଛି।
+4. ଏହି synthetic address କୁ email ପଠାଯିବ ନାହିଁ। ତେଣୁ Customer ଙ୍କ Email optional contact email ଭାବରେ ରଖାଯାଏ, Auth login ପାଇଁ ନୁହେଁ।
 
-## 3) ପ୍ରଥମ Admin ତିଆରି
-1. Website ରେ ନିଜ Email ଦେଇ ପ୍ରଥମ Customer Account register କରନ୍ତୁ।
-2. Email confirmation ଥିଲେ Email ର Link ଖୋଲନ୍ତୁ ଏବଂ ପୁଣି Login କରନ୍ତୁ।
-3. Supabase → SQL Editor ରେ ଏହି query ଚଲାନ୍ତୁ (ନିଜ Email ବସାନ୍ତୁ):
+## C. Project URL ଓ Public Key
+Supabase → Project Settings → API ରୁ Project URL ଓ anon/publishable public key copy କରନ୍ତୁ। `js/supabase-config.js` ରେ ବସାନ୍ତୁ। `service_role` / secret key କେବେ browser code କିମ୍ବା GitHub ରେ ରଖିବେ ନାହିଁ।
+
+## D. ପ୍ରଥମ Admin
+1. Netlify website ରେ ନିଜ ନାମ, ନିଜ Admin Username (ଯଥା `jlsadmin`) ଓ Password ଦେଇ Register କରନ୍ତୁ।
+2. Supabase → SQL Editor ରେ ନିଜ username ବସାଇ ଏହି query Run କରନ୍ତୁ:
 
 ```sql
-update public.profiles
-set role = 'admin'
-where email = 'YOUR_ADMIN_EMAIL@example.com';
+UPDATE public.profiles SET role = 'admin' WHERE username = 'jlsadmin';
 ```
 
-4. Website ରୁ Logout କରି ପୁଣି Login କରନ୍ତୁ। Admin ଙ୍କୁ Customer Management panel ଦେଖାଯିବ।
+3. Logout କରି ପୁଣି Login କରନ୍ତୁ। Admin Customer Management ଦେଖିପାରିବେ। ପ୍ରଥମ Admin କୁ କେବଳ ନିଜେ SQL Editor ରୁ promote କରନ୍ତୁ।
 
-## 4) GitHub / Netlify Deploy
-1. ZIP Extract କରନ୍ତୁ। Project ଭିତରର ସମସ୍ତ file/folder ଆପଣଙ୍କ GitHub repository ର root ରେ upload କରନ୍ତୁ (ପୁରୁଣା project କୁ backup ରଖନ୍ତୁ)।
-2. GitHub commit କଲେ Netlify ର auto-deploy ହେବ। Deploy ପରେ `https://onlinesevajls.netlify.app` ରେ test କରନ୍ତୁ।
+## E. Customer Login
+- Customer Register କରିବା ସମୟରେ ନିଜର unique Username (4–30 ଅକ୍ଷର), ନାମ ଓ Password ଦେବେ।
+- ଉଦାହରଣ: `OSC1001`, `OSC1002`।
+- ପରେ Username + Password ଦେଇ Login କରିବେ।
+- Password ଭୁଲିଗଲେ Admin ଙ୍କ ସହିତ ଯୋଗାଯୋଗ କରିବେ। Username-only identity ରେ email-based self-service password reset ନାହିଁ। Admin ଙ୍କୁ Supabase Dashboard ରୁ password reset କରିବାକୁ ପଡ଼ିବ।
+- Admin customer account Activate / Deactivate କରିପାରିବେ।
 
-## 5) Customer ବ୍ୟବହାର
-- Customer ନିଜ Email ଓ Password ଦେଇ Register କରିବେ।
-- Email confirmation ହେଲେ Login କରି Service Portal ବ୍ୟବହାର କରିବେ।
-- Admin Customer Management ରୁ Customer Account Activate / Deactivate କରିପାରିବେ।
-- Deactivated customer ଙ୍କୁ Portal ଭିତରକୁ ପ୍ରବେଶ ମିଳିବ ନାହିଁ।
+## F. Netlify Deploy
+ZIP Extract କରି project ଭିତରର ସମସ୍ତ file/folder GitHub repository ର root ରେ upload/replace କରନ୍ତୁ। Commit କଲେ Netlify auto-deploy ହେବ।
 
-## Security notes
-- ଏହା customer sign-in wall ଓ profile-based access control ଯୋଡ଼େ। Service catalogue JSON ରେ ଥିବା public government links ଗୁଡ଼ିକ ସାର୍ବଜନିକ ହୋଇପାରେ; ସେଗୁଡ଼ିକୁ ଗୁପ୍ତ ରଖିବା ଉଦ୍ଦେଶ୍ୟ ନୁହେଁ।
-- Private customer documents, payments, application records କିମ୍ବା sensitive data ଯୋଡ଼ିବା ପୂର୍ବରୁ ପ୍ରତ୍ୟେକ table ପାଇଁ ଅଲଗା RLS policy ତିଆରି କରନ୍ତୁ।
-- Admin role କେବଳ Supabase SQL Editor ରୁ ଦିଅନ୍ତୁ; public registration ରେ role ଚୟନ କରିବାର ବିକଳ୍ପ ନାହିଁ।
-- Supabase ର free plan limits ଓ email sending limits ଲାଗୁ ହୋଇପାରେ।
+## Security
+- Email confirmations OFF ଥିବାରୁ username login ତୁରନ୍ତ ଚାଲିବ; strong password ଓ Supabase Auth rate limits ରଖନ୍ତୁ।
+- Username କୁ ଗୁପ୍ତ ଭାବନ୍ତୁ ନାହିଁ; Password ଗୁପ୍ତ ରଖନ୍ତୁ।
+- Customer role କୁ browser ରୁ Admin କରିହେବ ନାହିଁ; role update SQL Editor ରୁ କରନ୍ତୁ।
+- Service catalogue ର public links ଲୁଚାଇବା ଏହି login ର ଉଦ୍ଦେଶ୍ୟ ନୁହେଁ। Private documents/data ଯୋଡ଼ିବା ପୂର୍ବରୁ server-side authorization ଓ table-specific RLS ଆବଶ୍ୟକ।
