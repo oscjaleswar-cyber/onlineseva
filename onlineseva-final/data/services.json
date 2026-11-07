@@ -1,11 +1,11 @@
 {
   "config": {
     "brand": {
-      "name": "Online Workshop",
-      "shortName": "ROW",
+      "name": "Online Solution Dunia",
+      "shortName": "OSD",
       "tagline": "Digital Services • Online Applications • Design & Print",
       "description": "Your one-stop online communication and digital service centre.",
-      "logoText": "ROW"
+      "logoText": "OSD"
     },
     "contact": {
       "whatsappNumber": "8327711051",
@@ -23,7 +23,7 @@
       "allowSystem": true
     },
     "footer": {
-      "note": "Rajeeb Online Workshop is a private digital service centre. Government/official portals open in a new tab."
+      "note": "Online Solution Dunia is a private digital service centre. Government/official portals open in a new tab."
     }
   },
   "categories": [
