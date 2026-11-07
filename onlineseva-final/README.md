@@ -1,4 +1,4 @@
-# Rajeeb Online Workshop — merged portal
+# Online Solution — merged portal
 
 This folder combines the public-facing ROW services catalogue and the Supabase username/email login with the Admin Panel.
 
